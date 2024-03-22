@@ -11,8 +11,7 @@ const Sidebar = () => {
   return (
     <aside
       className="flex flex-col items-center min-w-12 sm:w-16 sticky top-0 left-0 h-screen py-8
-        overflow-y-auto border-r bg-clip-padding backdrop-filter backdrop-blur-md
-        bg-opacity-10 hover:bg-gray-600/10 border-gray-800 text-white
+        overflow-y-auto border-r bg-glass
    "
     >
       <nav className="h-full flex flex-col gap-3">
@@ -46,27 +45,26 @@ const Sidebar = () => {
         )}
 
         {!authUser && (
-            <Link
-                to='/login'
-                className='p-1.5 focus:outline-nones transition-colors duration-200 rounded-lg hover:bg-gray-800'
-            >
-                <PiSignInBold size={25} />
-            </Link>
+          <Link
+            to="/login"
+            className="p-1.5 focus:outline-nones transition-colors duration-200 rounded-lg hover:bg-gray-800"
+          >
+            <PiSignInBold size={25} />
+          </Link>
         )}
         {!authUser && (
-            <Link
-                to='/signup'
-                className='p-1.5 focus:outline-nones transition-colors duration-200 rounded-lg hover:bg-gray-800'
-            >
-                <MdEditDocument size={25} />
-            </Link>
+          <Link
+            to="/signup"
+            className="p-1.5 focus:outline-nones transition-colors duration-200 rounded-lg hover:bg-gray-800"
+          >
+            <MdEditDocument size={25} />
+          </Link>
         )}
         {authUser && (
-            <div className='flex flex-col gap-2 mt-auto'>
-                <Logout />
-            </div>
+          <div className="flex flex-col gap-2 mt-auto">
+            <Logout />
+          </div>
         )}
-        
       </nav>
     </aside>
   );
