@@ -66,8 +66,7 @@ const Sidebar = () => {
                 <Logout />
             </div>
         )}
-
-
+        
       </nav>
     </aside>
   );
