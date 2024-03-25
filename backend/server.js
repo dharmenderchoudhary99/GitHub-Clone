@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 
-// Time:2:25:00
+
 
 app.get("/",(req,res)=>{
     res.send("Server is ready")
