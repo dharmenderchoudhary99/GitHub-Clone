@@ -58,7 +58,7 @@ export const likeProfile = async (rwq, res) => {
 export const getLikes = async (req, res) => {
   try {
     const user = await User.findById(req.user._id.toString());
-    res.status(200).json({likedBy:user.likedBy})
+    res.status(200).json({ likedBy: user.likedBy });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

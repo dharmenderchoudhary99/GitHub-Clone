@@ -15,7 +15,7 @@ const ExplorePage = () => {
     setRepos([]);
     try {
       //5000 request per hour
-      const res = await fetch("http://localhost:5000/api/explore/repos/" + language);
+      const res = await fetch("/api/explore/repos/" + language);
       const { repos } = await res.json();
       setRepos(repos);
       setSelectedLanguage(language);
@@ -43,25 +43,25 @@ const ExplorePage = () => {
             src="/typescript.svg"
             alt="TypeScript logo"
             className="h-11 sm:h-20 cursor-pointer"
-			onClick={() => exploreRepos("typescript")}
+            onClick={() => exploreRepos("typescript")}
           />
           <img
             src="/c++.svg"
             alt="C++ logo"
             className="h-11 sm:h-20 cursor-pointer"
-			onClick={() => exploreRepos("c++")}
+            onClick={() => exploreRepos("c++")}
           />
           <img
             src="/python.svg"
             alt="Python logo"
             className="h-11 sm:h-20 cursor-pointer"
-			onClick={() => exploreRepos("python")}
+            onClick={() => exploreRepos("python")}
           />
           <img
             src="/java.svg"
             alt="Java logo"
             className="h-11 sm:h-20 cursor-pointer"
-			onClick={() => exploreRepos("java")}
+            onClick={() => exploreRepos("java")}
           />
         </div>
         {repos.length > 0 && (
@@ -80,6 +80,5 @@ const ExplorePage = () => {
     </div>
   );
 };
-
 
 export default ExplorePage;
