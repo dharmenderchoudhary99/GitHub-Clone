@@ -21,7 +21,7 @@ router.get("/check", (req, res) => {
   if (req.isAuthenticated()) {
     res.send({ user: req.user });
   } else {
-    req.send({ user: null });
+    res.send({ user: null });
   }
 });
 
