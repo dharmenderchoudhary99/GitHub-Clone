@@ -4,7 +4,9 @@
   "description": "Creating a github like clone using mern stack",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon backend/server.js"
+    "dev": "nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/server.js"
   },
   "type": "module",
   "keywords": [],
