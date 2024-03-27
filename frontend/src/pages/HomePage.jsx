@@ -29,6 +29,8 @@ const HomePage = () => {
 
         console.log("userProfile", userProfile);
         console.log("repos:", repos);
+        
+        return {userProfile,repos}
       } catch (error) {
         toast.error(error.message);
       } finally {
