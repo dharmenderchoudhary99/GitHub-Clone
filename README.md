@@ -1,6 +1,6 @@
 # Github Clone
 
-      ![Home](https://github.com/dharmenderchoudhary99/GitHub-Clone/assets/120792811/6b4500a4-9ae8-4dd3-9103-534f517db526)
+![Home](https://github.com/dharmenderchoudhary99/GitHub-Clone/assets/120792811/d898016c-be03-4a78-9d0d-d3c1ff8fc8d7)
 
     This repository contains the code for a web application built using React for the frontend and Node.js for the backend. 
     The application allows users to explore GitHub profiles, view repositories, like profiles, and perform user authentication using GitHub OAuth.
